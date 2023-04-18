@@ -9,7 +9,6 @@ def getDetails(url, idx, term):
     error_link = 'error_link.txt'
     print(f'{idx} number page scraping started!')
     res = requests.get(url)
-    print(res.status_code)
     html = HTMLParser(res.text)
     details = {}
     if res.status_code == 200:
