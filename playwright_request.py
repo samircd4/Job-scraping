@@ -120,7 +120,7 @@ def getTitles(txt_file):
 def main():
     txt_file = 'titles.txt'
     titles = getTitles(txt_file)
-    for term in titles[:28]:
+    for term in titles[:50]:
         curr_time = time.time()
         print(f'Title: {term} Scraping started!')
         links = searchTitle(term)
